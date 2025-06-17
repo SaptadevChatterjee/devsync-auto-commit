@@ -15,7 +15,7 @@ jobs:
 
       - name: Make daily commit by 24f2005529@ds.study.iitm.ac.in
         env:
-          PAT_TOKEN: ${{ secrets.token }}
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           echo "Daily update: $(date)" >> daily-log.txt
           git config user.name "DevSync Bot"
